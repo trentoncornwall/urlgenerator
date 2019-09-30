@@ -1,0 +1,83 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00b7ff;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 200px;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px;
+	grid-template-areas: "region" "rid" "date" "time" "party" "source" "submit";
+}
+
+select {
+	width: 50%;
+}
+
+input {
+	height: 17px;
+}
+.region {
+	grid-area: region;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rid {
+	grid-area: rid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	grid-area: date;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.time {
+	grid-area: time;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.party {
+	grid-area: party;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.submit {
+	grid-area: submit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.source {
+	grid-area: source;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#submit {
+	margin-top: 20px;
+	height: 100%;
+	width: 100%;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
+
+#urlcontainer {
+	margin-top: 25px;
+}
