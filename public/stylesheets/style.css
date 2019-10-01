@@ -19,6 +19,7 @@ select {
 }
 
 input {
+	width: 100px;
 	height: 17px;
 }
 .region {
