@@ -7,6 +7,10 @@ function create(theForm) {
 	const party = $("#party").val();
 	const source = $("#source").val();
 
+	//
+	// Yea... I built a server... because I wanted practice
+	//
+
 	if (!region || !rid || !date || !time || !party) {
 		$("#url").text("Missing Fields...");
 	} else {
