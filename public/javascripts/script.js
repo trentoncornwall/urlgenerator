@@ -26,6 +26,7 @@ function create(theForm) {
 			},
 			data => {
 				$("#url").text(data);
+				$("#url").addClass("activated");
 			}
 		);
 	}
