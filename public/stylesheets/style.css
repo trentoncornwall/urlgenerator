@@ -99,6 +99,7 @@ input {
 	background-color: white;
 	border-color: #da3743;
 	font-weight: bold;
+	padding: 15px 20px;
 }
 
 #submit:hover {
