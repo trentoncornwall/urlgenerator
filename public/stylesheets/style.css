@@ -33,7 +33,8 @@ form {
 }
 
 select {
-	width: 50%;
+	width: 108px;
+	/* height: 17px; */
 }
 
 input {
