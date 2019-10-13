@@ -25,8 +25,20 @@ function create(theForm) {
 				source: source
 			},
 			data => {
-				$("#url").text(data);
-				$("#url").addClass("activated");
+				//Initiating ClipboardJS library
+				new ClipboardJS(".btn");
+
+				//input field that holds the URL
+				let urlField = $(`<input id='urlField' value=${data}>`);
+
+				//Copy Button that selects and copies value from input field
+				let copyButton = $(
+					`<button class='btn' data-clipboard-target='#urlField'>`
+				).text("Copy");
+
+				// places on DOM
+				$("#urlcontainer").empty();
+				$("#urlcontainer").append(urlField, copyButton);
 			}
 		);
 	}
