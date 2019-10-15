@@ -16,8 +16,6 @@ header {
 }
 main {
 	grid-area: main;
-	/* margin-top: 30px;
-	margin-left: 120px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -34,7 +32,6 @@ form {
 
 select {
 	width: 103px;
-	/* height: 17px; */
 }
 
 input {
@@ -109,8 +106,8 @@ input {
 }
 
 #urlcontainer {
-	margin-top: 15px;
-	height: 40px;
+	/* margin-top: 5px; */
+	/* height: 40px; */
 	font-size: 12px;
 	display: flex;
 	align-items: center;
@@ -118,12 +115,32 @@ input {
 	width: 100%;
 }
 
+#rrcontainer {
+	/* margin-top: px; */
+	/* height: 40px; */
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.urllabel {
+	margin-top: 10px;
+}
+
+.rrlabel {
+	margin-top: 10px;
+}
 #urlField {
 	width: 100%;
 	height: 25px;
 	font-size: 14px;
 	border: 2px solid #da3743;
 	padding-left: 10px;
+	background: #da3743;
+	color: white;
+	font-weight: 700;
 }
 
 .btn {
@@ -132,7 +149,6 @@ input {
 	background: white;
 	color: #da3743;
 	border: 2px solid #da3743;
-	/* border-radius: 10px; */
 	font-size: 12px;
 	background-color: white;
 	border-color: #da3743;
