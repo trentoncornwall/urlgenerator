@@ -26,6 +26,9 @@ router.post("/create", (req, res) => {
 			}
 			var restref = `https://www.opentable.${data.region}/r${response.data.nlUrl}?restref=${data.rid}`;
 			res.json({ query: query, restref: restref });
+		})
+		.catch(error => {
+			console.log(error);
 		});
 });
 
