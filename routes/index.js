@@ -11,7 +11,9 @@ router.post("/create", (req, res) => {
 	// creates restref url
 	var data = req.body;
 	console.log(data);
-	console.log(`going to send a get to axios`);
+	console.log(
+		`going to send a get to axios https://www.opentable.com/widget/reservation/api/restaurant?rid=${data.rid}`
+	);
 	axios
 		.get(
 			`https://www.opentable.com/widget/reservation/api/restaurant?rid=${data.rid}`
