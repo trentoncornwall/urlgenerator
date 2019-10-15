@@ -14,8 +14,8 @@ router.post("/create", (req, res) => {
 	console.log(
 		`going to send a get to axios https://www.opentable.com/widget/reservation/api/restaurant?rid=${data.rid}`
 	);
-	axios(
-			`www.opentable.com/widget/reservation/api/restaurant?rid=${data.rid}`
+	axios.get(
+			`http://www.opentable.com/widget/reservation/api/restaurant?rid=${data.rid}`
 		)
 		.then(response => {
 			console.log(`getting response from axios`, response);
