@@ -39,18 +39,6 @@ function create(theForm) {
 				$("#urlcontainer").append(urlField, copyButton);
 				$(".urllabel").append(urlLabel);
 
-				// Creating RestRef URL
-				new ClipboardJS(".btn");
-				let rrLabel = $("<div id='urllabel'>").append(
-					$("<p>").text("Standard RestRef URL:")
-				);
-				let rrField = $(`<input id='urlField' value=${data.restref}>`);
-				let rrcopyButton = $(
-					`<button class='btn' data-clipboard-target='#rrField'>`
-				).text("Copy");
-				$("#rrcontainer").empty();
-				$("#rrcontainer").append(rrField, rrcopyButton);
-				$(".rrlabel").append(rrLabel);
 			}
 		);
 	}
