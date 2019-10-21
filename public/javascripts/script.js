@@ -15,7 +15,8 @@ function create(theForm) {
 		$("#url").text("Missing Fields...");
 	} else {
 		$.post(
-			"/create", {
+			"/create",
+			{
 				region: region,
 				rid: rid,
 				date: date,
@@ -37,8 +38,20 @@ function create(theForm) {
 
 				$("#urlcontainer").empty();
 				$("#urlcontainer").append(urlField, copyButton);
+				$(".urllabel").empy();
 				$(".urllabel").append(urlLabel);
 
+				// Creating RestRef URL
+				// let rrLabel = $("<div id='urllabel'>").append(
+				// 	$("<p>").text("Standard RestRef URL:")
+				// );
+				// let rrField = $(`<input id='urlField' value=${data.restref}>`);
+				// let rrcopyButton = $(
+				// 	`<button class='btn' data-clipboard-target='#rrField'>`
+				// ).text("Copy");
+				// $("#rrcontainer").empty();
+				// $("#rrcontainer").append(rrField, rrcopyButton);
+				// $(".rrlabel").append(rrLabel);
 			}
 		);
 	}
