@@ -83,19 +83,21 @@
 
         <div class="source">
             <label for="source">Source: </label>
-
             <select name="source" id="source">
                 <option value="">None</option>
-                <option value="10792">Facebook</option>
-                <option value="10795">Twitter</option>
-                <option value="10813">TrackID 1</option>
-                <option value="10816">TrackID 2</option>
-                <option value="10819">TrackID 3</option>
-                <option value="16891">TrackID 4</option>
-                <option value="16895">TrackID 5</option>
+                <option value="Restaurant%20website">Restaurant Website</option>
+                <option value="Email">Email</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Other">Other</option>
             </select>
         </div>
 
+        <div class="campaign">
+            <label for="source">Campaign: </label>
+            <input type="text" name="campaign" id="campaign" placeholder="optional">
+        </div>
 
         <div class="submit">
             <input type="submit" id="submit" value="Submit">
@@ -103,9 +105,6 @@
     </form>
     <div class="urllabel"></div>
     <div id="urlcontainer"></div>
-    <div class="rrlabel"></div>
-    <div id="rrcontainer"></div>
-
 </main>
 
 <script src="/javascripts/script.js"></script>
